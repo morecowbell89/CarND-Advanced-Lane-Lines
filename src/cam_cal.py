@@ -54,6 +54,7 @@ for idx, fname in enumerate(images):
         write_name = '../camera_cal/corners_found/corners_found'+str(idx)+'.jpg'
         cv2.imwrite(write_name,img)
 
+# load image for size reference
 img = cv2.imread('../camera_cal/calibration1.jpg')
 img_size = (img.shape[1],img.shape[0])
 
